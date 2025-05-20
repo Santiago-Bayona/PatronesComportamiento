@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="617.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.patronescomportamiento.ViewController.UserVC">
+    <children>
+        <Label layoutX="288.0" layoutY="14.0" text="Usuario">
+            <font>
+                <Font name="Impact" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="btt_Regresar" layoutY="-1.0" mnemonicParsing="false" onAction="#Regresar" text="Regresar" />
+        <ComboBox fx:id="cmbx_Tipo" layoutX="383.0" layoutY="198.0" prefWidth="150.0" promptText="Tipo" />
+        <TextField fx:id="txt_Nombre" layoutX="383.0" layoutY="97.0" />
+        <TextField fx:id="txt_Correo" layoutX="383.0" layoutY="141.0" />
+        <Label layoutX="295.0" layoutY="102.0" text="Nombre" />
+        <Label layoutX="299.0" layoutY="146.0" text="Correo" />
+        <TableView fx:id="tb_canal" layoutX="39.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="tbc_Canal" editable="false" prefWidth="199.0" text="Canal" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tb_User" layoutX="-3.0" layoutY="356.0" prefHeight="261.0" prefWidth="659.0">
+            <columns>
+                <TableColumn fx:id="tbc_Nombre" prefWidth="126.0" text="Nombre" />
+                <TableColumn fx:id="tbc_Correo" prefWidth="132.0" text="Correo" />
+                <TableColumn fx:id="tbc_Tipo" prefWidth="109.0" text="Tipo" />
+                <TableColumn fx:id="tbc_Preferido" prefWidth="150.0" text="Canal Preferido" />
+                <TableColumn fx:id="tbc_bloqueo" prefWidth="137.0" text="Bloqueado" />
+            </columns>
+        </TableView>
+        <Button fx:id="btt_Agregar" layoutX="224.0" layoutY="318.0" mnemonicParsing="false" onAction="#Agregar" prefHeight="31.0" prefWidth="85.0" styleClass="btn btn-default" text="Agregar" />
+        <Button fx:id="btt_Eliminar" layoutX="66.0" layoutY="318.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="31.0" prefWidth="85.0" text="Eliminar" />
+        <Button fx:id="btt_Actualizar" layoutX="365.0" layoutY="318.0" mnemonicParsing="false" onAction="#Actualizar" prefHeight="31.0" prefWidth="85.0" text="Actualizar" />
+        <Button fx:id="btt_Limpiar" layoutX="511.0" layoutY="318.0" mnemonicParsing="false" onAction="#Limpiar" prefHeight="31.0" prefWidth="85.0" text="Limpiar" />
+        <CheckBox fx:id="Ckbx_bloqueo" layoutX="383.0" layoutY="250.0" mnemonicParsing="false" text="Bloqueado" />
+    </children>
+</AnchorPane>
